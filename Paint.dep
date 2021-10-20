@@ -1,0 +1,46 @@
+# Microsoft Developer Studio Generated Dependency File, included by Paint.mak
+
+.\Credits.cpp : \
+	".\Credits.h"\
+	".\resource.h"\
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\Paint.cpp : \
+	".\Credits.h"\
+	".\Paint.h"\
+	".\resource.h"\
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\Paint.rc : \
+	".\brushfill.bmp"\
+	".\Erase02.ico"\
+	".\eraser.cur"\
+	".\gbc.bmp"\
+	".\Help.ico"\
+	".\Icon1.ico"\
+	".\mainbar.bmp"\
+	".\Pen1.cur"\
+	".\penfill.bmp"\
+	".\penline.bmp"\
+	".\Pens03.ico"\
+	".\resource.h"\
+	".\Splsh16.bmp"\
+	".\Sports pen.cur"\
+	".\toolbar.bmp"\
+	
+
+.\splash.cpp : \
+	".\Paint.h"\
+	".\resource.h"\
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	

@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Paint - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP275.TMP" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Paint.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\MBSoft Paint 2000\Paint.cpp"
+"H:\MBSoft Paint 2000\splash.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP275.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Paint 2000.pdb" /machine:I386 /out:"Release/Paint 2000.exe"  ".\Release\Credits.obj" ".\Release\Paint.obj" ".\Release\splash.obj" ".\Release\StdAfx.obj" ".\Release\Paint.res" "
+<h3>Output Window</h3>
+Compiling...
+Paint.cpp
+splash.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Paint 2000.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

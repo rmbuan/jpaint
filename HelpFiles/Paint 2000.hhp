@@ -1,0 +1,29 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=Paint 2000.chm
+Contents file=toc-Paint 2000.hhc
+Default topic=html\paint2000.htm
+Display compile progress=Yes
+Full-text search=Yes
+Index file=html\Index.hhk
+Language=0x1009 English (Canada)
+Title=MB Software Paint 2000
+
+
+[FILES]
+html\paint2000.htm
+html\introduction.htm
+html\mfc-starting.htm
+html\author.htm
+html\mainapp.htm
+html\icon.htm
+html\cursors.htm
+html\toolbars.htm
+html\howtouse.htm
+html\disclaimer.htm
+html\howtoregister.htm
+html\features.htm
+
+[INFOTYPES]
+

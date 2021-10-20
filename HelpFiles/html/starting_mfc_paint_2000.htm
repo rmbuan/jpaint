@@ -1,0 +1,657 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Starting MFC Paint 2000</title>
+</head>
+
+<body>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;</span><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">Starting MFC Paint 2000<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:22.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Run the program just by double clicking it on Windows Explorer or you can
+go to Start Button and then Run Button then just browse the location of the
+software. You will see a splash screen when you first load the program. The
+splash screen looks like this.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:389.25pt;
+ height:237.75pt' o:ole="">
+ <v:imagedata src="images/starti1.gif"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti1.gif" v:shapes="_x0000_i1025" width="519" height="317"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1020373589">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">NOTE: CsplashWnd : CWnd declaration of splash screen class. So the
+splash screen is a window.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span></u></b>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">The Main Application<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>When the splash screen hides you will see the Main Application with looks
+like this.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:6in;height:345.75pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image002.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti2.jpg" v:shapes="_x0000_i1026" width="576" height="461"><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">Notes: I have made the application MAXIMIZE for full usability. I have
+attained this by including the SW_MAXIMIZED in the ShowWindow method of Capp.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">The Icon<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>I also change the default application icon. The Icon looks like this.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1027" type="#_x0000_t202" style='position:absolute;
+ margin-left:-4.95pt;margin-top:10.6pt;width:54pt;height:18pt;z-index:2'
+ filled="f" stroked="f"/><![endif]-->
+<span style="mso-ignore:vglayout;
+position:relative;z-index:1;left:-7px;top:14px;width:74px;height:40px">
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="74" height="26" align="left" valign="top" style="vertical-align:top"><span style="position:absolute;z-index:2">
+      <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td>
+            <div v:shape="_x0000_s1027" style="padding:3.6pt 7.2pt 3.6pt 7.2pt" class="shape">
+              <p class="MsoNormal"><span lang="EN-US">The icon</span></p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      </span>&nbsp;</td>
+  </tr>
+</table>
+</span><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b><br style="mso-ignore:vglayout" clear="ALL">
+<p class="MsoNormal" align="center" style="text-align:center"><!--[if gte vml 1]><v:line
+ id="_x0000_s1026" style='position:absolute;left:0;text-align:left;z-index:1'
+ from="40.05pt,5.8pt" to="85.05pt,5.8pt">
+ <v:stroke endarrow="block"/>
+ <w:wrap anchorx="page"/>
+</v:line><![endif]-->
+<span style="mso-ignore:vglayout;position:
+absolute;z-index:0;left:0px;margin-left:52px;margin-top:2px;width:64px;
+height:14px"><img src="images/starti3.gif" v:shapes="_x0000_s1026" width="64" height="14"></span><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:242.25pt;height:31.5pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image005.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti4.jpg" v:shapes="_x0000_i1027" width="323" height="42"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1020373592">
+ </o:OLEObject>
+</xml><![endif]-->
+</span><b><span lang="EN-US" style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Also when you have the icon on the desktop. It looks like this.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:30pt;height:33.75pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image007.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti5.jpg" v:shapes="_x0000_i1028" width="40" height="45"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1020373593">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+<span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Also when you look at the application version on the properties. You will
+see this.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:275.25pt;height:319.5pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image009.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti6.jpg" v:shapes="_x0000_i1029" width="367" height="426"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1020373594">
+ </o:OLEObject>
+</xml><![endif]-->
+</span><b><span lang="EN-US" style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">The Cursors<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>I have change the application cursor, drawing line cursor, drawing
+freehand cursor, and eraser cursor.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">Application Cursor:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:33pt;height:29.25pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image011.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti7.jpg" v:shapes="_x0000_i1030" width="44" height="39"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1020373596">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">Drawing Line Cursor:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:31.5pt;height:29.25pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image013.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti8.jpg" v:shapes="_x0000_i1031" width="42" height="39"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1020373597">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">Drawing Freehand Cursor:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:31.5pt;height:30.75pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image015.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti9.jpg" v:shapes="_x0000_i1032" width="42" height="41"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1020373598">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span></b>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">Eraser Cursor:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:39pt;height:33.75pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image017.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti10.jpg" v:shapes="_x0000_i1033" width="52" height="45"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1020373599">
+ </o:OLEObject>
+</xml><![endif]-->
+<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">The Toolbars, ReBar and Statusbar<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoBodyText"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>I have five toolbars and three of them is in the ReBar, and two can be
+docked / float.</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">The Tools Toolbar:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:300pt;height:37.5pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image019.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti11.jpg" v:shapes="_x0000_i1034" width="400" height="50"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1020373600">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">The Background Brush Toolbar:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:129pt;height:36pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image021.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti12.jpg" v:shapes="_x0000_i1035" width="172" height="48"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1020373601">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">The ReBar:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The ReBar has three toolbar in it.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:357.75pt;height:20.25pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image023.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti13.jpg" v:shapes="_x0000_i1036" width="477" height="27"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1020373602">
+ </o:OLEObject>
+</xml><![endif]-->
+<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Its looks can be also change like IE 5.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span style="mso-tab-count: 1; font-size: 12.0pt; mso-bidi-font-size: 10.0pt" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1037" type="#_x0000_t75"
+ style='width:213.75pt;height:41.25pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image025.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti14.jpg" v:shapes="_x0000_i1037" width="285" height="55"></span><b><span lang="EN-US" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1020373603">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">The Statusbar:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US">The right side:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1038"
+ type="#_x0000_t75" style='width:431.25pt;height:18.75pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image027.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti15.jpg" v:shapes="_x0000_i1038" width="575" height="25"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="MSPhotoEd.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1020373604">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US">The left side:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1039"
+ type="#_x0000_t75" style='width:93pt;height:19.5pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image029.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti16.jpg" v:shapes="_x0000_i1039" width="124" height="26"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="MSPhotoEd.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1020373605">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span></u></b>
+<p class="MsoNormal"><b><u><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt">How to Use the program.<o:p>
+</o:p>
+</span></u></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoBodyText"><span lang="EN-US">To draw a line simply click on the
+Line Image at the Tools Toolbar and press your left mouse button down and drag
+it to how long you want the line to be and release the left mouse button. This
+all applies to drawing rectangles, ellipse, oval, arc, pie, round rectangle,
+eraser, and freehand. To create a text simply click on the A image button on the
+Tools toolbar. You will be prompt for a Font Dialog box.</span></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1040" type="#_x0000_t75"
+ style='width:303.75pt;height:258pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image031.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti17.jpg" v:shapes="_x0000_i1040" width="405" height="344"><span style="mso-spacerun: yes">&nbsp;</span>After
+this, you should click on the Client Area where you want the text to be
+displayed. You will then again be asked to type what text you want to be
+displayed on another Dialog box.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1041" type="#_x0000_t75"
+ style='width:213.75pt;height:86.25pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image033.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti18.jpg" v:shapes="_x0000_i1041" width="285" height="115"><span style="mso-spacerun: yes">&nbsp;</span>After
+you click ok, your text will be displayed. To fill drawings simply click on the
+Fill Image on the Tools Toolbar. You will then be prompt for a Colour Dialog
+box, which you can either select what custom brush you want or use the default
+selected brush. See Image next page.<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1042" type="#_x0000_t75"
+ style='width:339.75pt;height:243pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image035.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="images/starti19.jpg" v:shapes="_x0000_i1042" width="453" height="324"><o:p>
+</o:p>
+</span></b></p>
+<ul style="margin-top:0cm" type="disc">
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">To
+    change brush colours, simply press one button in the Brush Background
+    Toolbar. <o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">To
+    change pen colours, simpley press one button in the Pen Color Toolbar
+    located at the ReBar.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">To
+    change pen sizes, simply press one button in the Pen Size Toolbar located at
+    the ReBar.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can also enter custom sizes by clicking on the Custom size image on the Pen
+    Size Toolbar. You will be prompt for a Dialog box that has a slider control
+    on it that you can drag and change. <!--[if gte vml 1]><v:shape id="_x0000_i1043"
+      type="#_x0000_t75" style='width:354.75pt;height:90pt'>
+      <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image037.png"
+       o:title=""/>
+     </v:shape><![endif]-->
+    <img src="images/starti20.jpg" v:shapes="_x0000_i1043" width="473" height="120"><span style="mso-spacerun:
+     yes">&nbsp;</span>You can then override the custom size by typing a value
+    lower to the slider control at the Edit box.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can show and hide toolbars at the Option menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can choose your termination button at the Option menu too.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can enable Undo/Redo on the Option menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can fix the Flickering on the Option menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can show the splash screen on the Option menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can zoom in, zoom out and reset using the View menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can use undo / redo using the Edit menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can Save, Create New, Open, Setup Printer, and Exit using the File menu.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Also
+    this entire menu item has a default menu trigger and accellerators.<o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">The
+    menu items dynamically checks and unchecks whenever you check an item. </span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1044" type="#_x0000_t75"
+      style='width:84.75pt;height:117pt' o:ole="">
+      <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image039.png"
+       o:title=""/>
+     </v:shape><![endif]-->
+    <img src="images/starti21.jpg" v:shapes="_x0000_i1044" width="113" height="156"></span><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+      <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1044"
+       DrawAspect="Content" ObjectID="_1020373607">
+      </o:OLEObject>
+     </xml><![endif]-->
+    </span></b><span style="mso-spacerun:
+     yes" lang="EN-US">&nbsp;</span><b><span lang="EN-US" style="font-size:12.0pt;
+     mso-bidi-font-size:10.0pt">The toolbar items dynamically press and unpress
+    whenever you press a button. </span></b><span lang="EN-US"><!--[if gte vml 1]><v:shape
+      id="_x0000_i1045" type="#_x0000_t75" style='width:128.25pt;height:20.25pt'
+      o:ole="">
+      <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image041.png"
+       o:title=""/>
+     </v:shape><![endif]-->
+    <img src="images/starti22.jpg" v:shapes="_x0000_i1045" width="171" height="27"></span><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><!--[if gte mso 9]><xml>
+      <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1045"
+       DrawAspect="Content" ObjectID="_1020373608">
+      </o:OLEObject>
+     </xml><![endif]-->
+    <o:p>
+    </o:p>
+    </span></b></li>
+  <li class="MsoNormal" style="mso-list:l0 level1 lfo3;tab-stops:list 36.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">You
+    can also view the About and the infamous Credits using the Help menu. <!--[if gte vml 1]><v:shape
+      id="_x0000_i1046" type="#_x0000_t75" style='width:299.25pt;height:183pt'>
+      <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image043.png"
+       o:title=""/>
+     </v:shape><![endif]-->
+    <img src="images/starti23.jpg" v:shapes="_x0000_i1046" width="399" height="244"><span style="mso-spacerun:
+     yes">&nbsp;</span>and <!--[if gte vml 1]><v:shape id="_x0000_i1047" type="#_x0000_t75"
+      style='width:348.75pt;height:225.75pt'>
+      <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/01/clip_image045.png"
+       o:title=""/>
+     </v:shape><![endif]-->
+    <img src="images/starti24.jpg" v:shapes="_x0000_i1047" width="465" height="301"><o:p>
+    </o:p>
+    </span></b></li>
+</ul>
+<p class="MsoNormal"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:18.0pt"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+
+</body>
+
+</html>
