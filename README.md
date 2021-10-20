@@ -1,2 +1,3 @@
-# jpaint
-Old school project made in Visual C++ with MFC
+# Project - jPaint
+
+A software that mimic's Windows Paint using Visual C++ with MFC
